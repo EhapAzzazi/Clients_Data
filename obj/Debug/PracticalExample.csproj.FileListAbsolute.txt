@@ -1,0 +1,9 @@
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\bin\Debug\PracticalExample.exe.config
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\bin\Debug\PracticalExample.exe
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\bin\Debug\PracticalExample.pdb
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalExample.csprojResolveAssemblyReference.cache
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalExample.dataform.resources
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalExample.Properties.Resources.resources
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalExample.csproj.GenerateResource.Cache
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalExample.exe
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalExample.pdb

@@ -1,0 +1,63 @@
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalProject.csprojResolveAssemblyReference.cache
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalProject.csproj.GenerateResource.Cache
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\bin\Debug\PracticalProject.exe.config
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\bin\Debug\PracticalProject.exe
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\bin\Debug\PracticalProject.pdb
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalProject.Properties.Resources.resources
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalProject.exe
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalProject.pdb
+C:\Users\عزازي\Desktop\PracticalExample\PracticalExample\obj\Debug\PracticalProject.dataform.resources
+D:\C#\Form\My Projects\PracticalProject\PracticalExample\bin\Debug\PracticalProject.exe.config
+D:\C#\Form\My Projects\PracticalProject\PracticalExample\obj\Debug\PracticalProject.exe
+D:\C#\Form\My Projects\PracticalProject\PracticalExample\obj\Debug\PracticalProject.pdb
+D:\C#\Form\My Projects\PracticalProject\PracticalExample\bin\Debug\PracticalProject.exe
+D:\C#\Form\My Projects\PracticalProject\PracticalExample\bin\Debug\PracticalProject.pdb
+D:\C#\Form\My Projects\PracticalProject\PracticalExample\obj\Debug\PracticalProject.csprojResolveAssemblyReference.cache
+D:\C#\Form\My Projects\PracticalProject\PracticalExample\obj\Debug\PracticalProject.dataform.resources
+D:\C#\Form\My Projects\PracticalProject\PracticalExample\obj\Debug\PracticalProject.Properties.Resources.resources
+D:\C#\Form\My Projects\PracticalProject\PracticalExample\obj\Debug\PracticalProject.csproj.GenerateResource.Cache
+C:\Users\عزازي\Desktop\PracticalProject\PracticalExample\bin\Debug\PracticalProject.exe.config
+C:\Users\عزازي\Desktop\PracticalProject\PracticalExample\obj\Debug\PracticalProject.exe
+C:\Users\عزازي\Desktop\PracticalProject\PracticalExample\obj\Debug\PracticalProject.pdb
+C:\Users\عزازي\Desktop\PracticalProject\PracticalExample\bin\Debug\PracticalProject.exe
+C:\Users\عزازي\Desktop\PracticalProject\PracticalExample\bin\Debug\PracticalProject.pdb
+C:\Users\عزازي\Desktop\PracticalProject\PracticalExample\obj\Debug\PracticalProject.csprojResolveAssemblyReference.cache
+C:\Users\عزازي\Desktop\PracticalProject\PracticalExample\obj\Debug\PracticalProject.dataform.resources
+C:\Users\عزازي\Desktop\PracticalProject\PracticalExample\obj\Debug\PracticalProject.Properties.Resources.resources
+C:\Users\عزازي\Desktop\PracticalProject\PracticalExample\obj\Debug\PracticalProject.csproj.GenerateResource.Cache
+C:\Users\عزازي\Desktop\Personal Data\PracticalExample\bin\Debug\PracticalProject.exe.config
+C:\Users\عزازي\Desktop\Personal Data\PracticalExample\obj\Debug\PracticalProject.exe
+C:\Users\عزازي\Desktop\Personal Data\PracticalExample\obj\Debug\PracticalProject.pdb
+C:\Users\عزازي\Desktop\Personal Data\PracticalExample\bin\Debug\PracticalProject.exe
+C:\Users\عزازي\Desktop\Personal Data\PracticalExample\bin\Debug\PracticalProject.pdb
+C:\Users\عزازي\Desktop\Personal Data\PracticalExample\obj\Debug\PracticalProject.csprojResolveAssemblyReference.cache
+C:\Users\عزازي\Desktop\Personal Data\PracticalExample\obj\Debug\PracticalProject.dataform.resources
+C:\Users\عزازي\Desktop\Personal Data\PracticalExample\obj\Debug\PracticalProject.Properties.Resources.resources
+C:\Users\عزازي\Desktop\Personal Data\PracticalExample\obj\Debug\PracticalProject.csproj.GenerateResource.Cache
+D:\C#\Form\My Projects\Personal Data\PracticalExample\bin\Debug\PracticalProject.exe.config
+D:\C#\Form\My Projects\Personal Data\PracticalExample\obj\Debug\PracticalProject.exe
+D:\C#\Form\My Projects\Personal Data\PracticalExample\obj\Debug\PracticalProject.pdb
+D:\C#\Form\My Projects\Personal Data\PracticalExample\bin\Debug\PracticalProject.exe
+D:\C#\Form\My Projects\Personal Data\PracticalExample\bin\Debug\PracticalProject.pdb
+D:\C#\Form\My Projects\Personal Data\PracticalExample\obj\Debug\PracticalProject.csprojResolveAssemblyReference.cache
+D:\C#\Form\My Projects\Personal Data\PracticalExample\obj\Debug\PracticalProject.dataform.resources
+D:\C#\Form\My Projects\Personal Data\PracticalExample\obj\Debug\PracticalProject.Properties.Resources.resources
+D:\C#\Form\My Projects\Personal Data\PracticalExample\obj\Debug\PracticalProject.csproj.GenerateResource.Cache
+C:\Users\عزازي\Desktop\Personal Data1\PracticalExample\bin\Debug\PracticalProject.exe.config
+C:\Users\عزازي\Desktop\Personal Data1\PracticalExample\obj\Debug\PracticalProject.exe
+C:\Users\عزازي\Desktop\Personal Data1\PracticalExample\obj\Debug\PracticalProject.pdb
+C:\Users\عزازي\Desktop\Personal Data1\PracticalExample\bin\Debug\PracticalProject.exe
+C:\Users\عزازي\Desktop\Personal Data1\PracticalExample\bin\Debug\PracticalProject.pdb
+C:\Users\عزازي\Desktop\Personal Data1\PracticalExample\obj\Debug\PracticalProject.csprojResolveAssemblyReference.cache
+C:\Users\عزازي\Desktop\Personal Data1\PracticalExample\obj\Debug\PracticalProject.dataform.resources
+C:\Users\عزازي\Desktop\Personal Data1\PracticalExample\obj\Debug\PracticalProject.Properties.Resources.resources
+C:\Users\عزازي\Desktop\Personal Data1\PracticalExample\obj\Debug\PracticalProject.csproj.GenerateResource.Cache
+D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\bin\Debug\PracticalProject.exe.config
+D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\obj\Debug\PracticalProject.exe
+D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\obj\Debug\PracticalProject.pdb
+D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\bin\Debug\PracticalProject.exe
+D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\bin\Debug\PracticalProject.pdb
+D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\obj\Debug\PracticalProject.csprojResolveAssemblyReference.cache
+D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\obj\Debug\PracticalProject.dataform.resources
+D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\obj\Debug\PracticalProject.Properties.Resources.resources
+D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\obj\Debug\PracticalProject.csproj.GenerateResource.Cache
