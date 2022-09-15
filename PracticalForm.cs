@@ -150,6 +150,8 @@ namespace PracticalProject
         }
         private void findbtn_Click(object sender, EventArgs e)
         {
+            if (resultpicbox.Image != null)
+                resultpicbox.Image = new PictureBox().Image;
             if (findlbl.Text != "")
                 findlbl.Text = "";
             if (idtxt.Text.Trim() != "")
@@ -176,15 +178,12 @@ namespace PracticalProject
                             if (File.Exists(mypath))
                             {
                                 using (FileStream stream = new FileStream(mypath, FileMode.Open))
-                                image1 = Image.FromStream(stream);
-                                resultpicbox.Image = image1;
-                                
+                                resultpicbox.Image = Image.FromStream(stream);
                             }
                             else if (File.Exists(mypath1))
                             {
                                 using (FileStream stream = new FileStream(mypath1, FileMode.Open))
-                                image1 = Image.FromStream(stream);
-                                resultpicbox.Image = image1;
+                                resultpicbox.Image = Image.FromStream(stream);
                             }
                             idtxt.Focus();
                             idtxt.SelectAll();
@@ -270,6 +269,7 @@ namespace PracticalProject
             StreamReader sr = new StreamReader("PersonalData.txt");
             int top = 10;
             string ShowAll = "";
+            Image image1 = null;
             do
             {
                 ShowAll = sr.ReadLine();
@@ -282,11 +282,10 @@ namespace PracticalProject
                     /////////////////////////////////////////
                     txt.Width = 600;
                     txt.Top = top + 60;
-                    //txt.Text = ShowAll.Replace(";", " : ");
                     if (arrfind.Length == 3)
-                        txt.Text = "ID: " + arrfind[0] + ", Name: " + arrfind[1] + ", Address: " + arrfind[2] + " .";
+                        txt.Text = $"ID: {arrfind[0]}, Name: {arrfind[1]}, Address: {arrfind[2]}.";
                     else
-                        txt.Text = "ID: " + arrfind[0] + ", Name: " + arrfind[1] + ", Address: " + arrfind[2] + ", Date: " + arrfind[3] + " .";
+                        txt.Text = $"ID: {arrfind[0]}, Name: {arrfind[1]}, Address: {arrfind[2]}, Date: {arrfind[3]}.";
                     txt.ReadOnly = true;
                     /////////////////////////////////////////
                     picbx.Left = 610;
@@ -295,15 +294,17 @@ namespace PracticalProject
                     picbx.BorderStyle = BorderStyle.FixedSingle;
                     picbx.SizeMode = PictureBoxSizeMode.StretchImage;
                     /////////////////////////////////////////
-                    string imgpath = "imgs/" + ShowAll.ToString().Split(';')[0] + ".jpg";
-                    string imgpath2 = "imgs/" + ShowAll.ToString().Split(';')[0] + ".png";
+                    string imgpath = $"imgs/{arrfind[0]}.jpg";
+                    string imgpath2 = $"imgs/{arrfind[0]}.png";
                     if (File.Exists(imgpath))
                     {
-                        picbx.Image = Image.FromFile(imgpath);
+                        using (FileStream SM = new FileStream(imgpath, FileMode.Open))
+                        picbx.Image = Image.FromStream(SM);
                     }
-                    else if(File.Exists(imgpath2))
+                    else if (File.Exists(imgpath2))
                     {
-                        picbx.Image = Image.FromFile(imgpath2);
+                        using (FileStream SM = new FileStream(imgpath2, FileMode.Open))
+                        picbx.Image = Image.FromStream(SM);
                     }
                     /////////////////////////////////////////
                     FM1.Controls.Add(txt);
