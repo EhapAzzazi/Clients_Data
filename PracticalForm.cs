@@ -15,6 +15,7 @@ namespace PracticalProject
     public partial class dataform : Form
     {
         public DateTime StartTimer = new DateTime();
+        private bool Check = false;
         public dataform()
         {
             InitializeComponent();
@@ -161,6 +162,8 @@ namespace PracticalProject
                 string line = "";
                 do
                 {
+                    StartTimer = DateTime.Now;
+                    Check = true;
                     line = sr.ReadLine();
                     if (line != null)
                     {
@@ -171,7 +174,6 @@ namespace PracticalProject
                             findlbl.Text = "Hello " + arrfind[1] + ", Yor Address is : " + arrfind[2] + ".";
                             else
                                 findlbl.Text = "Hello " + arrfind[1] + ", Address: " + arrfind[2] + ", Date: " + arrfind[3] + " .";
-                            StartTimer = DateTime.Now;
                             string mypath = "imgs/" + arrfind[0] +".jpg";
                             string mypath1 = "imgs/" + arrfind[0] + ".png";
                             if (File.Exists(mypath))
@@ -310,10 +312,11 @@ namespace PracticalProject
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(DateTime.Now > StartTimer.AddSeconds(20))
+            if(DateTime.Now >= StartTimer.AddSeconds(5) && Check == true)
             {
                 resultpicbox.Image = new PictureBox().Image;
                 findlbl.Text = "";
+                Check = false;
             }
         }
 
