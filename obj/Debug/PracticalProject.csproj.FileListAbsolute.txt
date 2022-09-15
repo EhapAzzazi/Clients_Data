@@ -64,7 +64,6 @@ D:\C#\Form\My Projects\Personal Data1\Date\Personal Data1\PracticalExample\obj\D
 D:\GitHub\Clients_Data\bin\Debug\PracticalProject.exe.config
 D:\GitHub\Clients_Data\bin\Debug\PracticalProject.exe
 D:\GitHub\Clients_Data\bin\Debug\PracticalProject.pdb
-D:\GitHub\Clients_Data\obj\Debug\PracticalProject.csproj.AssemblyReference.cache
 D:\GitHub\Clients_Data\obj\Debug\PracticalProject.dataform.resources
 D:\GitHub\Clients_Data\obj\Debug\PracticalProject.Properties.Resources.resources
 D:\GitHub\Clients_Data\obj\Debug\PracticalProject.csproj.GenerateResource.cache

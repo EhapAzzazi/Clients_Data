@@ -60,33 +60,44 @@ namespace PracticalProject
             {
                 if (File.Exists("PersonalData.txt"))
                 {
-                    StreamReader sr = new StreamReader("PersonalData.txt");
-                    string idcheck = sr.ReadToEnd();
-                    sr.Close();
-                    if (idcheck.Contains(idtxt.Text + ";"))
-                        MessageBox.Show("Try another ID, Please...");
-                    else
+                    using (StreamReader sr = new StreamReader("PersonalData.txt"))
                     {
-                        //////////////////////////////////
-                        StreamWriter sw = new StreamWriter("PersonalData.txt", true);
-                        string personalData = this.idtxt.Text.Trim() + ";" + this.nametxt.Text.Trim() + ";" + this.addresstxt.Text.Trim() + ";" + this.dtpicker.Value.ToString("dd/MM/yyyy").Trim();
-                        sw.WriteLine(personalData);
-                        sw.Close();
-                        if (!Directory.Exists("imgs"))
-                            Directory.CreateDirectory("imgs");
-                        if (enterpicbox.Image != null)
-                            enterpicbox.Image.Save("imgs/" + idtxt.Text + Path.GetExtension(ofd.FileName));
-                        MessageBox.Show("Added Successfully.");
-                        ////////////////////
-                        sltptbtn.Visible = true;
-                        enterpicbox.Image = new PictureBox().Image;
-                        idtxt.Clear();
-                        nametxt.Clear();
-                        addresstxt.Clear();
-                        dtpicker.Value = DateTime.Now;
-                        idtxt.Focus();
-                        ///////////////////
+                        string test = "";
+                        do
+                        {
+                            test = sr.ReadLine();
+                            if (test != null)
+                            {
+                                string[] arr = test.Split(';');
+                                if (arr[0] == idtxt.Text)
+                                {
+                                    MessageBox.Show("Try another ID, please...");
+                                    return;
+                                }
+                            }
+                        }
+                        while (test != null);
+                        sr.Close();
                     }
+                    //////////////////////////////////
+                    StreamWriter sw = new StreamWriter("PersonalData.txt", true);
+                    string personalData = this.idtxt.Text.Trim() + ";" + this.nametxt.Text.Trim() + ";" + this.addresstxt.Text.Trim() + ";" + this.dtpicker.Value.ToString("dd/MM/yyyy").Trim();
+                    sw.WriteLine(personalData);
+                    sw.Close();
+                    if (!Directory.Exists("imgs"))
+                        Directory.CreateDirectory("imgs");
+                    if (enterpicbox.Image != null)
+                        enterpicbox.Image.Save("imgs/" + idtxt.Text + Path.GetExtension(ofd.FileName));
+                    MessageBox.Show("Added Successfully.");
+                    ////////////////////
+                    sltptbtn.Visible = true;
+                    enterpicbox.Image = new PictureBox().Image;
+                    idtxt.Clear();
+                    nametxt.Clear();
+                    addresstxt.Clear();
+                    dtpicker.Value = DateTime.Now;
+                    idtxt.Focus();
+                    ///////////////////
                 }
                 else
                 {
@@ -109,10 +120,13 @@ namespace PracticalProject
                 while ((old = sr.ReadLine()) != null)
                 {
                     resultpicbox.Image = new PictureBox().Image;
-                    if (!old.Contains(search_text))
+                    string[] arr = old.Split(';');
+                    if (arr[0] != search_text)
                         n += old + Environment.NewLine;
                     else
+                    {
                         m += old.ToString();
+                    }
                 }
 
                 if (m != "")
@@ -138,6 +152,11 @@ namespace PracticalProject
 
                 }
                 sr.Close();
+                //StreamWriter sw = new StreamWriter("PersonalData.txt");
+                //StreamWriter sw = new StreamWriter("PersonalData.txt");
+                //StreamWriter sw = new StreamWriter("PersonalData.txt");
+                // sw.Write(n);
+                //sw.Close();
                 File.WriteAllText("PersonalData.txt", n);
             }
             else
@@ -158,7 +177,6 @@ namespace PracticalProject
             {
                 StreamReader sr = new StreamReader("PersonalData.txt");
                 string line = "";
-                Image image1 = null;
                 do
                 {
                     StartTimer = DateTime.Now;
@@ -269,7 +287,6 @@ namespace PracticalProject
             StreamReader sr = new StreamReader("PersonalData.txt");
             int top = 10;
             string ShowAll = "";
-            Image image1 = null;
             do
             {
                 ShowAll = sr.ReadLine();
