@@ -75,10 +75,10 @@
             // namelbl
             // 
             this.namelbl.AutoSize = true;
-            this.namelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.namelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.namelbl.Location = new System.Drawing.Point(23, 199);
             this.namelbl.Name = "namelbl";
-            this.namelbl.Size = new System.Drawing.Size(143, 44);
+            this.namelbl.Size = new System.Drawing.Size(122, 38);
             this.namelbl.TabIndex = 1;
             this.namelbl.Text = "Name: ";
             // 
@@ -86,20 +86,20 @@
             // 
             this.idlbl.AutoSize = true;
             this.idlbl.BackColor = System.Drawing.Color.Transparent;
-            this.idlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.idlbl.Location = new System.Drawing.Point(23, 155);
             this.idlbl.Name = "idlbl";
-            this.idlbl.Size = new System.Drawing.Size(78, 44);
+            this.idlbl.Size = new System.Drawing.Size(67, 38);
             this.idlbl.TabIndex = 2;
             this.idlbl.Text = "ID: ";
             // 
             // addresslbl
             // 
             this.addresslbl.AutoSize = true;
-            this.addresslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addresslbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addresslbl.Location = new System.Drawing.Point(23, 243);
             this.addresslbl.Name = "addresslbl";
-            this.addresslbl.Size = new System.Drawing.Size(180, 44);
+            this.addresslbl.Size = new System.Drawing.Size(156, 38);
             this.addresslbl.TabIndex = 3;
             this.addresslbl.Text = "Address: ";
             // 
@@ -113,6 +113,7 @@
             this.idtxt.Size = new System.Drawing.Size(516, 46);
             this.idtxt.TabIndex = 4;
             this.idtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.idtxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.idtxt_KeyPress);
             // 
             // nametxt
             // 
@@ -124,6 +125,7 @@
             this.nametxt.Size = new System.Drawing.Size(516, 46);
             this.nametxt.TabIndex = 5;
             this.nametxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.nametxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nametxt_KeyPress);
             // 
             // addresstxt
             // 
@@ -135,6 +137,7 @@
             this.addresstxt.Size = new System.Drawing.Size(516, 46);
             this.addresstxt.TabIndex = 6;
             this.addresstxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.addresstxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.addresstxt_KeyPress);
             // 
             // addbtn
             // 
@@ -177,7 +180,6 @@
             this.toolTip1.SetToolTip(this.showbtn, "Show all data without images");
             this.showbtn.UseVisualStyleBackColor = false;
             this.showbtn.Visible = false;
-            this.showbtn.Click += new System.EventHandler(this.showbtn_Click);
             // 
             // deletebtn
             // 
@@ -282,10 +284,10 @@
             // datelbl
             // 
             this.datelbl.AutoSize = true;
-            this.datelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datelbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datelbl.Location = new System.Drawing.Point(23, 287);
             this.datelbl.Name = "datelbl";
-            this.datelbl.Size = new System.Drawing.Size(121, 44);
+            this.datelbl.Size = new System.Drawing.Size(104, 38);
             this.datelbl.TabIndex = 17;
             this.datelbl.Text = "Date :";
             // 
