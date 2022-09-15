@@ -99,7 +99,6 @@ namespace PracticalProject
         }
         private void deletebtn_Click(object sender, EventArgs e)
         {
-
             string search_text = idtxt.Text.Trim();
             string old;
             string n = "";
@@ -112,34 +111,31 @@ namespace PracticalProject
                     resultpicbox.Image = new PictureBox().Image;
                     if (!old.Contains(search_text))
                         n += old + Environment.NewLine;
-                    else 
+                    else
                         m += old.ToString();
                 }
-                
+
                 if (m != "")
                 {
+                    
                     string path = "imgs/" + search_text + ".jpg";
                     string path1 = "imgs/" + search_text + ".png";
                     FileInfo file = new FileInfo(path);
                     FileInfo file1 = new FileInfo(path1);
-                    if (resultpicbox.Image == Image.FromFile(path) || resultpicbox.Image == Image.FromFile(path1))
+                    if (file.Exists)
                     {
-                        resultpicbox.Image = new PictureBox().Image;
-                        if (file.Exists)
-                        {
-                            file.Delete();
-                        }
-                        else if (file1.Exists)
-                        {
-                            file1.Delete();
-                        }
+                        file.Delete();
+                    }
+                    else if (file1.Exists)
+                    {
+                        file1.Delete();
                     }
                     findlbl.Text = "Deleted Successfully!";
                 }
                 else
                 {
                     findlbl.Text = "Not Existed!";
-                    
+
                 }
                 sr.Close();
                 File.WriteAllText("PersonalData.txt", n);
@@ -150,7 +146,7 @@ namespace PracticalProject
             }
             idtxt.Clear();
             idtxt.Focus();
-            
+
         }
         private void findbtn_Click(object sender, EventArgs e)
         {
@@ -160,6 +156,7 @@ namespace PracticalProject
             {
                 StreamReader sr = new StreamReader("PersonalData.txt");
                 string line = "";
+                Image image1 = null;
                 do
                 {
                     StartTimer = DateTime.Now;
@@ -177,9 +174,18 @@ namespace PracticalProject
                             string mypath = "imgs/" + arrfind[0] +".jpg";
                             string mypath1 = "imgs/" + arrfind[0] + ".png";
                             if (File.Exists(mypath))
-                                resultpicbox.Image = Image.FromFile(mypath);
+                            {
+                                using (FileStream stream = new FileStream(mypath, FileMode.Open))
+                                image1 = Image.FromStream(stream);
+                                resultpicbox.Image = image1;
+                                
+                            }
                             else if (File.Exists(mypath1))
-                                resultpicbox.Image = Image.FromFile(mypath);
+                            {
+                                using (FileStream stream = new FileStream(mypath1, FileMode.Open))
+                                image1 = Image.FromStream(stream);
+                                resultpicbox.Image = image1;
+                            }
                             idtxt.Focus();
                             idtxt.SelectAll();
                             break;
